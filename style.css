@@ -1,0 +1,215 @@
+/* ---------- RESET & BASE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
+    background-color: #fefaf5;   /* fond très doux, crème */
+    color: #2c3a2f;
+    line-height: 1.5;
+   /* scroll-behavior: smooth;     navigation interne douce, sans JS */
+}
+/* image accueil */
+
+.profil{
+    /*display: block;
+    margin: auto;*/
+    text-align: center;
+}
+.profil img{
+    text-align: center;
+    width: 50%;
+    height: 500px;
+    border-radius: 50%;
+}
+#accueil p{
+    text-align: center;
+}
+
+/* conteneur principal pour centrer le contenu */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* sections générales */
+.section {
+    margin-bottom: 3.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9e0d5;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+/* titres principaux + secondaires */
+.title-main {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #3b5a40;
+    margin-bottom: 0.75rem;
+}
+
+.title-section {
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #4a6b4f;
+    margin-bottom: 1.25rem;
+    border-left: 5px solid #bdd3b5;
+    padding-left: 1rem;
+}
+
+/* texte de bienvenue + intro */
+.welcome-text {
+    text-align: center;
+    font-size: 25px;
+    color: #4d5d4a;
+    margin: 1rem 0 0.5rem 0;
+    background: #f8f2ea;
+    padding: 0.7rem 1.2rem;
+    border-radius: 24px;
+    /*display: inline-block;*/
+}
+
+.intro-text {
+    text-align: center;
+    margin: 0.8rem 0 1.8rem 0;
+    font-size: 1.05rem;
+    color: #4f624c;
+    max-width: 85%;
+}
+
+/* BOUTON simple, propre (lien interne vers Activités) */
+.btn {
+    /*display: inline-block;*/
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    /*font-weight: 500;*/
+    padding: 0.7rem 1.6rem;
+    border-radius: 40px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #68e35a;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.btn:hover {
+    background-color: #6e9a68; /* seul effet de couleur (aucune transition forcée) */
+}
+
+/* ----- À PROPOS : paragraphe simple ----- */
+.about-text {
+    background-color: #ffffffdb;
+    padding: 1.2rem 1.5rem;
+    border-radius: 28px;
+    font-size: 1.05rem;
+    color: #3b4a3a;
+    border: 1px solid #ece2d7;
+    max-width: 90%;
+}
+
+/* ----- GALERIE : grille simple & images placeholder ----- */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.image-card {
+    background: #fffaf3;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    width: 210px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f0e8df;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    background-color: #f2ede6;
+    display: block;
+    aspect-ratio: 1 / 0.9; /* jolie proportion, s'adapte aux futures images */
+    object-fit: cover;
+}
+
+.image-caption {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: #7a6e5f;
+    font-weight: 500;
+}
+
+.note-galerie {
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: #ab9f90;
+    font-style: italic;
+}
+
+/* ----- LISTE D'ACTIVITÉS ----- */
+.activities-list {
+    list-style: none;
+    background: #ffffffcf;
+    border-radius: 28px;
+    padding: 1.2rem 1.8rem;
+    border: 1px solid #ece2d7;
+    max-width: 85%;
+}
+
+.activities-list li {
+    margin-bottom: 0.85rem;
+    font-size: 1.05rem;
+    padding-left: 0.3rem;
+    color: #2b402e;
+    border-left: 3px solid #cadaaf;
+    padding-left: 1rem;
+}
+
+.activities-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* petits ajustements responsives */
+@media (max-width: 750px) {
+    .container {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .title-main {
+        font-size: 2rem;
+    }
+    
+    .title-section {
+        font-size: 1.6rem;
+    }
+    
+    .about-text, .activities-list {
+        max-width: 100%;
+    }
+    
+    .intro-text {
+        max-width: 100%;
+    }
+    
+    .gallery-grid {
+        justify-content: center;
+    }
+    
+    .image-card {
+        width: 160px;
+    }
+}

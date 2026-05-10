@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio · Étudiant L1</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- SECTION ACCUEIL -->
+        <section class="section" id="accueil">
+            <h1 class="title-main"><Strong>MOISE MK</Strong></h1>
+            <div class="profil">
+                <img src="./image/IMG_2083.jpg" alt="accueil">
+            </div>
+            <p class="welcome-text">✨ <strong>Bienvenue sur mon portfolio étudiant</strong> ✨</p>
+            <p class="intro-text">Je suis étudiant à l'université protestante au congo (UPC) en première année de licence Informatique & Sciences du numérique. 
+            J’apprends à créer des sites web simples, propres et fonctionnels.</p>
+            <!-- Bouton qui redirige vers la section Activités (lien interne) -->
+            <a href="#activites" class="btn">Voir mes activités →</a>
+        </section>
+
+        <!-- SECTION À PROPOS -->
+        <section class="section" id="apropos">
+            <h2 class="title-section">À propos</h2>
+            <p class="about-text">
+                Étudiant curieux et passionné par le web, j’ai découvert le développement il y a un an. 
+                J’aime construire des interfaces claires et accessibles. En dehors des cours, 
+                j’aime lire, faire du sport et participer à des projets associatifs. 
+                Mon objectif : devenir développeuse full-stack et créer des outils utiles au quotidien.
+            </p>
+        </section>
+
+        <!-- SECTION GALERIE (images à ajouter plus tard) -->
+        <section class="section" id="galerie">
+            <h2 class="title-section">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="image-card">
+                    <img src="images/placeholder1.jpg" alt="Image à venir - projet étudiant" class="image">
+                    <p class="image-caption">Projet créatif</p>
+                </div>
+                <div class="image-card">
+                    <img src="images/placeholder2.jpg" alt="Image à venir - bureau de travail" class="image">
+                    <p class="image-caption">Mon espace de travail</p>
+                </div>
+                <div class="image-card">
+                    <img src="images/placeholder3.jpg" alt="Image à venir - campus universitaire" class="image">
+                    <p class="image-caption">Campus universitaire</p>
+                </div>
+                <div class="image-card">
+                    <img src="images/placeholder4.jpg" alt="Image à venir - coding session" class="image">
+                    <p class="image-caption">Session de code</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION ACTIVITÉS (avec lien interne depuis l'accueil) -->
+        <section class="section" id="activites">
+            <h2 class="title-section">Activités</h2>
+            <ul class="activities-list">
+                <li>📚 Études : Licence Informatique - parcours développement web</li>
+                <li>💻 Projets : création de sites vitrine, petits jeux en JavaScript</li>
+                <li>⚽ Sport : Volley-ball universitaire (entraînements chaque mercredi)</li>
+                <li>🎨 Design : initiation à Figma et à l’UI simple</li>
+                <li>🌍 Bénévolat : aide numérique pour seniors</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
